@@ -1,12 +1,20 @@
+<!--
+ * @Author: wangrui
+ * @Date: 2022-01-19 16:20:45
+ * @LastEditors: wangrui
+ * @Description: 
+ * @LastEditTime: 2022-01-19 17:58:50
+-->
 <script setup lang="ts">
 import { ref } from 'vue'
-
+import layout from '@/layout/index.vue'
 defineProps<{ msg: string }>()
 
 const count = ref(0)
 </script>
 
 <template>
+<layout>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -31,6 +39,7 @@ const count = ref(0)
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+</layout>
 </template>
 
 <style scoped>
