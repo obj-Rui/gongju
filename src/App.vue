@@ -3,7 +3,7 @@
  * @Date: 2022-01-19 16:20:45
  * @LastEditors: wangrui
  * @Description: 
- * @LastEditTime: 2022-01-20 11:33:24
+ * @LastEditTime: 2022-02-07 14:08:31
 -->
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
@@ -16,5 +16,5 @@
 </template>
 
 <style>
-
+@import './assets/main.css'
 </style>

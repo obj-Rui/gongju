@@ -3,22 +3,24 @@
  * @Date: 2022-01-20 11:18:46
  * @LastEditors: wangrui
  * @Description: 
- * @LastEditTime: 2022-01-20 11:26:49
+ * @LastEditTime: 2022-02-07 16:15:23
  */
 import { defineComponent, ref } from "vue";
+import img from './../../assets/logo.png'
 
 const home = defineComponent({
   setup() {
     const title = ref("ceshihahhaha");
-
     return {
       title,
     };
   },
-  render() {
+  render () {
+    console.log('ss')
     return (
-      <div>
-        <p>{this.title}</p>
+      <div id="container">
+        <p >{this.title}</p>
+        <img src={img} alt="" />
       </div>
     );
   },

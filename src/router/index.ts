@@ -3,7 +3,7 @@
  * @Date: 2022-01-20 10:30:25
  * @LastEditors: wangrui
  * @Description: 
- * @LastEditTime: 2022-01-20 11:26:04
+ * @LastEditTime: 2022-03-01 17:55:23
  */
 import { createRouter, createWebHashHistory } from "vue-router";
 
@@ -17,8 +17,13 @@ const router = createRouter({
             children: [
                {
                 path:'/home',
-                component: () => import('../views/home/index')
-               }
+                component: () => import('../views/home/index.vue'),
+               },
+               {
+                path:'/demo01',
+                component: () => import('../views/demo01/index.vue'),
+               },
+
             ]
         }
     ]

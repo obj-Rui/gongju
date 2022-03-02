@@ -3,7 +3,7 @@
  * @Date: 2022-01-19 16:25:08
  * @LastEditors: wangrui
  * @Description: eslint 配置
- * @LastEditTime: 2022-01-19 16:26:59
+ * @LastEditTime: 2022-02-07 10:31:53
  */
 module.exports = {
     root: true,
@@ -31,7 +31,7 @@ module.exports = {
       computed: 'readonly',
     },
     rules: {
-      // 配合vue/no-multiple-template-root自动引入
+      // 配合vue/no-multiple-template-root自动引入 支持多个根结点
       'vue/no-multiple-template-root': 'off',
     }
   }
