@@ -3,7 +3,7 @@
  * @Date: 2022-03-01 17:23:17
  * @LastEditors: wangrui
  * @Description: 
- * @LastEditTime: 2022-03-02 17:47:48
+ * @LastEditTime: 2022-03-21 10:24:15
 -->
 <template>
   <div class="v-scroll" @scroll.passive="doScroll" ref="scrollBox">
@@ -13,19 +13,24 @@
         <img :src="item.src" />
       </div>
     </div>
+    <demo02 v-model="number"/>
   </div>
+  
 </template>
 
 
 <script>
 import { throttle } from "../../utils/tools";
+import demo02 from '../demo02/index.vue'
 export default {
+  components: {demo02},
   data() {
     return {
       allSanxins: [], // 所有数据
       itemHiehgt: 150, // 列表每一项的宽度
       boxHeight: 0, // 可视区域的高度
       startIndex: 0, // 元素开始索引
+      number:111
     };
   },
   created() {
