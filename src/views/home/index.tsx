@@ -3,7 +3,7 @@
  * @Date: 2022-01-20 11:18:46
  * @LastEditors: wangrui
  * @Description:
- * @LastEditTime: 2022-03-23 19:48:48
+ * @LastEditTime: 2022-03-28 14:14:51
  */
 import { defineComponent, ref } from "vue"
 import { DATA } from "../../utils/data.js"
@@ -224,8 +224,8 @@ const home = defineComponent<any>({
   },
   methods: {
     toTooL: () => {
-      console.log('tool')
-      document.querySelector('.main')
+      console.log("tool")
+      document.querySelector(".main")
     },
   },
   render() {
@@ -264,10 +264,15 @@ const home = defineComponent<any>({
             <div class="line"></div>
             <p>一个现在还没有工具的网站💪</p>
           </div>
-          <div class='button' onClick={this.toTooL}> button </div>
+          <div class="button" onClick={this.toTooL}>
+            {" "}
+            button{" "}
+          </div>
           <h4 class="author">
             {/* <p>xiaodi.obj</p> */}
-            <p><a href="https://beian.miit.gov.cn/">蜀ICP备2021028125号-1</a></p>
+            <p>
+              <a href="https://beian.miit.gov.cn/">蜀ICP备2021028125号-1</a>
+            </p>
           </h4>
         </div>
         <section class="content"></section>
