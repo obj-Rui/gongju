@@ -3,7 +3,7 @@
  * @Date: 2022-01-20 11:18:46
  * @LastEditors: wangrui
  * @Description:
- * @LastEditTime: 2022-03-28 14:14:51
+ * @LastEditTime: 2022-03-31 16:24:47
  */
 import { defineComponent, ref } from "vue"
 import { DATA } from "../../utils/data.js"
@@ -245,7 +245,7 @@ const home = defineComponent<any>({
               <a>首页·1</a>
             </li>
             <li data-id="2">
-              <a>官网·2</a>
+              <router-link to="/demo02">大数据看板</router-link>
             </li>
             <li data-id="3">
               <a>官网·3</a>
@@ -264,10 +264,10 @@ const home = defineComponent<any>({
             <div class="line"></div>
             <p>一个现在还没有工具的网站💪</p>
           </div>
-          <div class="button" onClick={this.toTooL}>
+          {/* <div class="button" onClick={this.toTooL}>
             {" "}
             button{" "}
-          </div>
+          </div> */}
           <h4 class="author">
             {/* <p>xiaodi.obj</p> */}
             <p>
