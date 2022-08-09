@@ -3,7 +3,7 @@
  * @Date: 2022-01-20 10:30:25
  * @LastEditors: wangrui
  * @Description:
- * @LastEditTime: 2022-04-01 10:02:14
+ * @LastEditTime: 2022-06-19 07:53:35
  */
 import { createRouter, createWebHashHistory } from "vue-router"
 
@@ -56,6 +56,14 @@ const router = createRouter({
     {
       path: "/demo03",
       component: () => import("../views/demo3/index.vue"),
+    },
+    {
+      path: "/demo04",
+      component: () => import("../views/demo04/index.vue"),
+    },
+    {
+      path: "/demo2",
+      component: () => import("../views/demo02/index.vue"),
     },
   ],
 })

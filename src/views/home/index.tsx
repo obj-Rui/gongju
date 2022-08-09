@@ -3,7 +3,7 @@
  * @Date: 2022-01-20 11:18:46
  * @LastEditors: wangrui
  * @Description:
- * @LastEditTime: 2022-03-31 16:24:47
+ * @LastEditTime: 2022-06-19 07:52:28
  */
 import { defineComponent, ref } from "vue"
 import { DATA } from "../../utils/data.js"
@@ -229,7 +229,6 @@ const home = defineComponent<any>({
     },
   },
   render() {
-    console.log(this)
     return (
       <div class="main scale">
         <div class="scroll-menu">
@@ -248,7 +247,7 @@ const home = defineComponent<any>({
               <router-link to="/demo02">大数据看板</router-link>
             </li>
             <li data-id="3">
-              <a>官网·3</a>
+              <router-link to="/demo2">demo2</router-link>
             </li>
             <li data-id="4">
               <a>官网·4</a>

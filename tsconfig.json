@@ -10,8 +10,12 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "isolatedModules": true ,// 校验导出文件 枚举校验
+    "isolatedModules": false, // 校验导出文件 枚举校验
     "types": ["vite/client"], // meta的一些属性 
+    "baseUrl": "src",
+    "paths": {
+        
+    },
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

@@ -30,7 +30,7 @@
         color: white;
         user-select: none;
       }
-      .container >.item > div {
+      .container > .item > div {
         position: absolute;
         height: 100vh;
         left: 0;
@@ -168,13 +168,12 @@
       <a href="https://beian.miit.gov.cn/">蜀ICP备2021028125号-1</a>
     </div>
     <script type="text/javascript">
-      let div5 = document.getElementsByClassName("div5");
-      console.log(typeof div5);
-	  console.log(div5)
-      const star = 3.2;
+      let div5 = document.getElementsByClassName("div5")
+      console.log(div5)
+      const star = 3.2
       for (let i in div5) {
-        console.log(i);
-        div5[i].style.animationDelay = Number(star + i / 10) + "s";
+        console.log(i)
+        div5[i].style.animationDelay = Number(star + i / 10) + "s"
       }
     </script>
   </body>
